@@ -10,24 +10,119 @@ p:hover {
   transform:
 }
 
-
-#test {
-  width: 100px;
-  height: 100px;
-  background-color: #0CB1C4;
+body .circle {
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  top: 10%;
+  left: 30%;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  border-radius: 300px;
+  background: none;
+  width: 600px;
+  height: 600px;
   animation-name: spin;
-  animation-duration: 5000ms;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  /* transform: rotate(3deg); */
-   /* transform: rotate(0.3rad);/ */
-   /* transform: rotate(3grad); */
-   /* transform: rotate(.03turn);  */
 }
 
-#test:hover {
+#obj1 {
+  position: absolute;
+  left: -5%;
+  top: 15%;
+  width: 150px;
+  animation-name: cabin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#obj2 {
+  position: absolute;
+  width: 200px;
+  top: 15%;
+  height: 150px;
+  left: 75%;
+  animation-name: cabin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#obj3 {
+  position: absolute;
+  width: 150px;
+  top: -10%;
+  left: 35%;
+  animation-name: cabin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#obj4 {
+  position: absolute;
+  width: 150px;
+  top: 53%;
+  left: -5%;
+  animation-name: cabin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#obj5 {
+  position: absolute;
+  width: 150px;
+  top: 53%;
+  left: 75%;
+  animation-name: cabin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#obj6 {
+  position: absolute;
+  width: 150px;
+  top: 85%;
+  left: 35%;
+  animation-name: cabin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+body .circle:hover > #obj1 {   animation-play-state: paused; }
+body .circle:hover > #obj2 {   animation-play-state: paused; }
+body .circle:hover > #obj3 {   animation-play-state: paused; }
+body .circle:hover > #obj4 {   animation-play-state: paused; }
+body .circle:hover > #obj5 {   animation-play-state: paused; }
+body .circle:hover > #obj6 {   animation-play-state: paused; }
+
+#obj1:hover #obj2 { filter: opacity(30%);}
+#obj1:hover #obj3 { filter: opacity(30%);}
+#obj1:hover #obj4 { filter: opacity(30%);}
+#obj1:hover #obj5 { filter: opacity(30%);}
+#obj1:hover #obj6 { filter: opacity(30%);}
+
+#obj2:hover #obj1 { filter: opacity(30%);}
+#obj2:hover #obj3 { filter: opacity(30%);}
+#obj2:hover #obj4 { filter: opacity(30%);}
+#obj2:hover #obj5 { filter: opacity(30%);}
+#obj2:hover #obj6 { filter: opacity(30%);}
+
+#obj3:hover #obj1 { filter: opacity(30%);}
+#obj3:hover #obj2 { filter: opacity(30%);}
+#obj3:hover #obj4 { filter: opacity(30%);}
+#obj3:hover #obj5 { filter: opacity(30%);}
+#obj3:hover #obj6 { filter: opacity(30%);}
+
+body .circle:hover {
   animation-play-state: paused;
 }
+
 
 @keyframes spin {
     from {
@@ -36,4 +131,14 @@ p:hover {
     to {
         transform:rotate(360deg);
     }
+}
+
+@keyframes cabin {
+  0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
 }
