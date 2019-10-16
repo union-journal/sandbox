@@ -2,7 +2,41 @@ body {
   background-image: linear-gradient(#F90000, #B6D515);
   background-attachment:fixed;
   height:100%;
+  color: #4400ff;
 }
+
+#info-text {
+  padding-top: 65%;
+  padding-bottom: 25px;
+  font-size: 25px;
+}
+
+.about {
+  text-align: center;
+}
+
+.Editorial {
+}
+
+.Design {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.website {
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+}
+
+.support {
+  text-align: center;
+}
+
 
 body .circle {
   position: relative;
