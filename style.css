@@ -6,9 +6,10 @@ body {
 }
 
 #info-text {
-  padding-top: 65%;
+  padding-top: 60%;
   padding-bottom: 25px;
-  font-size: 25px;
+  font-size: 18px;
+  font-family: georgia;
 }
 
 .about {
@@ -41,7 +42,7 @@ body {
 body .circle {
   position: relative;
   left: 50%;
-  top: 400px;
+  top: 350px;
   transform-origin: center center;
   border-radius: 1px;
   background: none;
